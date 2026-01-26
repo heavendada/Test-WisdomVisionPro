@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:h="https://github.com/HeBianGu"
+                    xmlns:local="clr-namespace:H.Controls.Form">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/Form.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/TextPropertyViewItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/TextPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/EnumPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/DateTimePropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/BoolPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/CommandPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/Base/ObjectPropertyItemBase.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/PresenterPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/FormPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/ExpanderFormPropertyItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/PropertyItems/DictionaryPropertyViewItem.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/FormPresenter.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/ItemsFormPresenter.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/StaticFormPresenter.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/H.Controls.Form;component/TabFormPresenter.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

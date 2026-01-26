@@ -1,0 +1,46 @@
+﻿// Copyright (c) HeBianGu Authors. All Rights Reserved. 
+// Author: HeBianGu 
+// Github: https://github.com/HeBianGu/WPF-Control 
+// Document: https://hebiangu.github.io/WPF-Control-Docs  
+// QQ:908293466 Group:971261058 
+// bilibili: https://space.bilibili.com/370266611 
+// Licensed under the MIT License (the "License")
+
+using H.Services.Common.DataBase;
+
+#if NETFRAMEWORK
+using System.Data.Entity;
+#endif
+
+#if NETCOREAPP
+using Microsoft.EntityFrameworkCore;
+#endif
+namespace H.DataBases.Share
+{
+    public class DbDisconnectService : IDbDisconnectService
+    {
+        public string Name => "数据库数据";
+        public bool Save(out string message)
+        {
+            message = null;
+            DbContext db = Ioc.GetService<DbContext>();
+            db?.SaveChanges();
+            //db.Dispose();
+            return true;
+        }
+    }
+
+    public class DbDisconnectService<TDbContext> : IDbDisconnectService where TDbContext : DbContext
+    {
+        public string Name => "数据库数据";
+        public bool Save(out string message)
+        {
+            message = null;
+            TDbContext db = Ioc.GetService<TDbContext>();
+            db?.SaveChanges();
+            //db.Dispose();
+            return true;
+        }
+    }
+
+}

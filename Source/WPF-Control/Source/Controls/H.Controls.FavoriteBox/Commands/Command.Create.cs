@@ -1,0 +1,31 @@
+﻿// Copyright (c) HeBianGu Authors. All Rights Reserved. 
+// Author: HeBianGu 
+// Github: https://github.com/HeBianGu/WPF-Control 
+// Document: https://hebiangu.github.io/WPF-Control-Docs  
+// QQ:908293466 Group:971261058 
+// bilibili: https://space.bilibili.com/370266611 
+// Licensed under the MIT License (the "License")
+
+namespace H.Controls.FavoriteBox
+{
+    [Icon("\xE713")]
+    [Display(Name = "添加", Description = "显示添加收藏夹页面")]
+    public class CreateFavoriteCommand : DisplayMarkupCommandBase
+    {
+        public override async void Execute(object parameter)
+        {
+            var service = Ioc.GetService<IFavoriteService>();
+            var favorite = service.Create();
+            var r = await IocMessage.Form.ShowEdit(favorite);
+            if (r != true)
+                return;
+            service.Add(favorite);
+            service.Save(out string message);
+        }
+
+        public override bool CanExecute(object parameter)
+        {
+            return Ioc.Exist<IFavoriteService>();
+        }
+    }
+}

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <ItemGroup>
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.21" />
+    <PackageReference Include="Vlc.DotNet.Core" Version="3.1.0" />
+    <PackageReference Include="Vlc.DotNet.Core.Interops" Version="3.1.0" />
+    <PackageReference Include="Vlc.DotNet.Wpf" Version="3.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Base\H.Attach\H.Attach.csproj" />
+    <ProjectReference Include="..\..\Extensions\H.Extensions.FontIcon\H.Extensions.FontIcon.csproj" />
+    <ProjectReference Include="..\..\Extensions\H.Extensions.Geometry\H.Extensions.Geometry.csproj" />
+    <ProjectReference Include="..\..\Extensions\H.Extensions.Setting\H.Extensions.Setting.csproj" />
+    <ProjectReference Include="..\..\Extensions\H.Extensions.TypeConverter\H.Extensions.TypeConverter.csproj" />
+    <ProjectReference Include="..\..\Base\H.ValueConverter\H.ValueConverter.csproj" />
+    <ProjectReference Include="..\..\Services\H.Services.Message\H.Services.Message.csproj" />
+    <ProjectReference Include="..\..\Styles\H.Style\H.Style.csproj" />
+    <ProjectReference Include="..\..\Themes\H.Theme\H.Theme.csproj" />
+  </ItemGroup>
+</Project>

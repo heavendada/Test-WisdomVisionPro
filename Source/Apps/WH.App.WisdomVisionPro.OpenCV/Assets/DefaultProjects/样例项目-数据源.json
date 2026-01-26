@@ -1,0 +1,26 @@
+{
+  "$type": "System.Collections.ObjectModel.ObservableCollection`1[[WH.WisdomVisionPro.DiagramData.IVisionDiagramData, WH.WisdomVisionPro.DiagramData]], System.ObjectModel",
+  "$values": [
+    {
+      "$id": "1",
+      "$type": "WH.App.WisdomVisionPro.OpenCV.DiagramDatas.OpenCVVisionDiagramData, WH.App.WisdomVisionPro.OpenCV",
+      "UseFlowableSelectToRunning": true,
+      "Name": "机器视觉流程",
+      "Width": 1000.0,
+      "Height": 1500.0,
+      "Location": "1000,650",
+      "Datas": {
+        "$type": "H.H.Controls.Diagram.Presenter.DiagramDatas.Base.Datas, H.H.Controls.Diagram.Presenter",
+        "NodeDatas": {
+          "$type": "System.Collections.Generic.List`1[[H.Controls.Diagram.Datas.INodeData, H.Controls.Diagram]], System.Private.CoreLib",
+          "$values": []
+        },
+        "LinkDatas": {
+          "$type": "System.Collections.Generic.List`1[[H.Controls.Diagram.Datas.ILinkData, H.Controls.Diagram]], System.Private.CoreLib",
+          "$values": []
+        }
+      },
+      "ID": "e369cecd-48b8-495f-840a-2311e21fa8ed"
+    }
+  ]
+}

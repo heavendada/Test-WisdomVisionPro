@@ -1,0 +1,27 @@
+﻿global using WH.App.WisdomVisionPro.OpenCV.DiagramDatas;
+global using WH.App.WisdomVisionPro.OpenCV.NodeDatas;
+global using H.Common.Attributes;
+global using H.Common.Interfaces;
+global using H.Controls.Diagram.Presenter.DiagramDatas;
+global using H.Controls.Diagram.Presenter.DiagramDatas.Base;
+global using H.Extensions.Common;
+global using H.Extensions.FontIcon;
+global using H.Extensions.NewtonsoftJson;
+global using H.Modules.Project;
+global using H.Mvvm.ViewModels.Base;
+global using WH.NodeDatas.Onnx.OpenCV.NodeDataGroups;
+global using H.Services.Message;
+global using WH.WisdomVisionPro.OpenCV.NodeDataGroups;
+global using Microsoft.Extensions.Options;
+global using System;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations;
+global using System.IO;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using System.Windows;
+global using System.Windows.Controls;
+global using WH.NodeDatas.Zoo.NodeDatas;
+global using WH.WisdomVisionPro.OpenCV.Base;
+global using WH.WisdomVisionPro.NodeGroup.Groups.Detector;
+

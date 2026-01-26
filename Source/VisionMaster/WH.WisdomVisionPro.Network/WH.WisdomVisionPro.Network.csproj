@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+	<ItemGroup>
+		<PackageReference Include="NModbus" Version="3.0.81" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\WH.WisdomVisionPro.NodeData\WH.WisdomVisionPro.NodeData.csproj" />
+		<ProjectReference Include="..\WH.WisdomVisionPro.NodeGroup\WH.WisdomVisionPro.NodeGroup.csproj" />
+	</ItemGroup>
+</Project>

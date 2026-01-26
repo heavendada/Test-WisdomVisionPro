@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <ItemGroup>
+    <ProjectReference Include="..\..\WPF-Control\Source\Controls\H.Controls.ROIBox\H.Controls.ROIBox.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Controls\H.Controls.ZoomBox.Extension\H.Controls.ZoomBox.Extension.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Extensions\H.Extensions.Command\H.Extensions.Command.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Extensions\H.Extensions.Common\H.Extensions.Common.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Extensions\H.Extensions.ValueConverter\H.Extensions.ValueConverter.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Controls\H.Controls.FilterBox\H.Controls.FilterBox.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Controls\H.Controls.Form.PropertyItem\H.Controls.Form.PropertyItem.csproj" />
+    <ProjectReference Include="..\..\WPF-Control\Source\Services\H.Services.Message\H.Services.Message.csproj" />
+    <ProjectReference Include="..\WH.WisdomVisionPro.NodeData\WH.WisdomVisionPro.NodeData.csproj" />
+    <ProjectReference Include="..\WH.WisdomVisionPro.ResultPresenter\WH.WisdomVisionPro.ResultPresenter.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+﻿// Copyright (c) HeBianGu Authors. All Rights Reserved. 
+// Author: HeBianGu 
+// Github: https://github.com/HeBianGu/WPF-Control 
+// Document: https://hebiangu.github.io/WPF-Control-Docs  
+// QQ:908293466 Group:971261058 
+// bilibili: https://space.bilibili.com/370266611 
+// Licensed under the MIT License (the "License")
+
+using H.Services.Serializable;
+using Newtonsoft.Json;
+
+namespace H.Extensions.NewtonsoftJson;
+
+public class NewtonsoftJsonSerializerService : IJsonSerializerService
+{
+    public object DeserializeObject(string txt, Type type)
+    {
+        return JsonConvert.DeserializeObject(txt, GetSerializerSettings());
+    }
+
+    public string SerializeObject<T>(T t)
+    {
+        return JsonConvert.SerializeObject(t, GetSerializerSettings()); ;
+    }
+
+    private JsonSerializerSettings GetSerializerSettings()
+    {
+        return NewtonsoftJsonOptions.Instance.JsonSerializerSettings;
+    }
+}
+
+public static class NewtonsoftJsonSerializerServiceExtension
+{
+    public static T CloneByNewtonsoftJson<T>(this T t)
+    {
+        var service = new NewtonsoftJsonSerializerService();
+        return service.Clone(t);
+    }
+}

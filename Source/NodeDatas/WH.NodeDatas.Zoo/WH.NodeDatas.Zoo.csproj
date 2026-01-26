@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\VisionMaster\WH.WisdomVisionPro.NodeData\WH.WisdomVisionPro.NodeData.csproj" />
+    <ProjectReference Include="..\..\VisionMaster\WH.WisdomVisionPro.Zoo.Videos\WH.WisdomVisionPro.Zoo.Videos.csproj" />
+  </ItemGroup>
+</Project>

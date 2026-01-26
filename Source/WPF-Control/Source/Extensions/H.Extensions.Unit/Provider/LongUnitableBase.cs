@@ -1,0 +1,29 @@
+﻿// Copyright (c) HeBianGu Authors. All Rights Reserved. 
+// Author: HeBianGu 
+// Github: https://github.com/HeBianGu/WPF-Control 
+// Document: https://hebiangu.github.io/WPF-Control-Docs  
+// QQ:908293466 Group:971261058 
+// bilibili: https://space.bilibili.com/370266611 
+// Licensed under the MIT License (the "License")
+
+namespace H.Extensions.Unit
+{
+    public abstract class LongUnitableBase : UnitableBase<long>
+    {
+        protected override long Parse(double value, long unit)
+        {
+            return (long)(value * unit);
+        }
+
+        protected override long ToAbs(long value)
+        {
+            return Math.Abs(value);
+        }
+
+        protected override double ToRound(long value, long unit)
+        {
+            return (double)Math.Round(value / (decimal)unit, this.Digits);
+        }
+    }
+}
+

@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+    <PackageReference Include="BencodeNET" Version="3.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Providers\H.Iocable\H.Iocable.csproj" />
+    <ProjectReference Include="..\..\Base\H.ValueConverter\H.ValueConverter.csproj" />
+  </ItemGroup>
+</Project>
