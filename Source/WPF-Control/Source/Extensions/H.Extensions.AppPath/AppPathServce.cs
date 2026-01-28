@@ -24,7 +24,7 @@ public class AppPathServce : Lazy<AppPathServce>, IAppPathServce
     /// <summary>
     /// 公司名称
     /// </summary>
-    public virtual string Company { get; set; } = "HeBianGu";
+    public virtual string Company { get; set; } = "WisdomVision";
 
     /// <summary>
     /// 配置文件扩展名

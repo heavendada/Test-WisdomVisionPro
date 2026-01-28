@@ -33,7 +33,7 @@ public partial class App : ApplicationBase
         app.UseSplashScreenOptions(x =>
         {
             x.ProductFontSize = 55;
-            x.Product = "WisdomVisionPro";
+            x.Product = "Wisdom Vision";
             x.Sub = "基于 WPF-Control 框架开发";
         });
         app.UseApplicationOptions(x =>
