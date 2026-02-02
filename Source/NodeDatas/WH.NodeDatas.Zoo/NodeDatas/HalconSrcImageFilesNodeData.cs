@@ -12,6 +12,6 @@ public abstract class HalconSrcImageFilesNodeData<T> : SrcFilesVisionNodeData<T>
     public override void LoadDefault()
     {
         base.LoadDefault();
-        this.SrcFilePaths = this.SrcFilePaths.Where(x => x.Contains("BaseImages")).ToObservable();
+        //this.SrcFilePaths = this.SrcFilePaths.Where(x => x.Contains("BaseImages")).ToObservable();
     }
 }
