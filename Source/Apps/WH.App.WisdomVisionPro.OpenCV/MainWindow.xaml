@@ -1130,8 +1130,8 @@
                                 <TextBlock HorizontalAlignment="Right"
                                            VerticalAlignment="Bottom">
                                     <Hyperlink Command="{ProcessCommand}"
-                                               CommandParameter="https://www.bilibili.com/video/BV1smd5YYEoh/?vd_source=d056512191c083233a4da171dd62475c">
-                                        下载地址
+                                               CommandParameter="http://www.wisdom2018.com">
+                                        公司网站
                                     </Hyperlink>
                                 </TextBlock>
                             </StatusBar>
